@@ -1,0 +1,8 @@
+<thlogic xmlns:th="http://www.thymeleaf.org">
+
+    <attr sel="#headId" th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#footerId" th:replace="~{fragments/footer :: footerFragment}"/>
+
+    <attr sel="#play-game" th:href="@{__${T(com.marcinsi.util.GameMappings).PLAY}__}" th:text="Play"/>
+
+</thlogic>
